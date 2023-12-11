@@ -1,0 +1,82 @@
+/* Reset some default styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Apply basic styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  #navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #navbar a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  #welcome-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3498db;
+    color: white;
+  }
+  
+  #projects {
+    padding: 20px;
+  }
+  
+  .project-tile {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #profile-link {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Media Query for Responsive Design */
+  @media screen and (max-width: 600px) {
+    #navbar ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #navbar a {
+      margin-bottom: 10px;
+    }
+  
+    #welcome-section h1 {
+      font-size: 1.5em;
+    }
+  
+    .project-tile {
+      width: 100%;
+    }
+  }
+  
